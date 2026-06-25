@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Van Creative Lab — Wedding Digital Products</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:     #0D0D0D;
+    --surface:#161616;
+    --border: #2A2A2A;
+    --gold:   #C9A96E;
+    --white:  #F0EDE8;
+    --muted:  #5A5A5A;
+    --hover:  #1E1E1E;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* HERO */
+  .hero {
+    width: 100%;
+    max-width: 480px;
+    padding: 60px 24px 40px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 5px 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero-name {
+    font-size: clamp(18px, 5vw, 28px);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .hero-name span {
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  /* DIVIDER */
+  .line {
+    width: 100%;
+    max-width: 480px;
+    height: 1px;
+    background: var(--border);
+    margin: 8px 0;
+  }
+
+  /* MAIN */
+  .main {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* CARD */
+  .card {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    background: var(--hover);
+    border-color: var(--gold);
+  }
+
+  .card-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .card-cta::after {
+    content: '→';
+    transition: transform 0.2s;
+  }
+
+  .card:hover .card-cta::after {
+    transform: translateX(4px);
+  }
+
+  
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    padding-top: 8px;
+  }
+
+</style>
+</head>
+<body>
+
+<header class="hero">
+
+  <!-- ✏️ EDIT: Teks kecil di atas nama brand -->
+  <div class="badge">Digital Products</div>
+
+  <!-- ✏️ EDIT: Nama brand kamu -->
+  <h1 class="hero-name">VAN CREATIVE LAB<span>.</span></h1>
+
+  <!-- ✏️ EDIT: Tagline / deskripsi singkat brand -->
+  <p class="hero-sub">Wedding Finance &amp; Photography Presets</p>
+
+</header>
+
+<div class="line"></div>
+
+<main class="main">
+
+  <!-- =============================== -->
+  <!-- ✏️ PRODUK 1 — Ganti bagian ini -->
+  <!-- =============================== -->
+  <!-- ✏️ EDIT: Ganti # dengan link produk 1 -->
+  <a href="#LINK-PRODUK-1-DISINI" class="card">
+    <!-- ✏️ EDIT: Label kategori produk 1 -->
+    <p class="card-num">01 / FINANCE</p>
+    <!-- ✏️ EDIT: Nama produk 1 -->
+    <h2 class="card-title">Wedding Finance Kit</h2>
+    <!-- ✏️ EDIT: Deskripsi produk 1 -->
+    <p class="card-desc">Template lengkap untuk merencanakan dan mengontrol anggaran pernikahan. Terstruktur, praktis, langsung pakai.</p>
+    <!-- ✏️ EDIT: Teks tombol produk 1 -->
+    <span class="card-cta">Lihat Produk</span>
+  </a>
+
+  <!-- =============================== -->
+  <!-- ✏️ PRODUK 2 — Ganti bagian ini -->
+  <!-- =============================== -->
+  <!-- ✏️ EDIT: Ganti # dengan link produk 2 -->
+  <a href="#LINK-PRODUK-2-DISINI" class="card">
+    <!-- ✏️ EDIT: Label kategori produk 2 -->
+    <p class="card-num">02 / PRESET</p>
+    <!-- ✏️ EDIT: Nama produk 2 -->
+    <h2 class="card-title">Wedding Preset Lightroom</h2>
+    <!-- ✏️ EDIT: Deskripsi produk 2 -->
+    <p class="card-desc">Preset foto pernikahan dengan tone hangat dan konsisten. Cocok untuk fotografer maupun couple.</p>
+    <!-- ✏️ EDIT: Teks tombol produk 2 -->
+    <span class="card-cta">Lihat Produk</span>
+  </a>
+
+  <!-- ✏️ EDIT: Teks footer -->
+  <p class="footer">© 2026 Van Creative Lab — All rights reserved</p>
+
+</main>
+
+</body>
+</html>
